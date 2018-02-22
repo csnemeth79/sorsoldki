@@ -24,7 +24,7 @@ public class SorsoldkiApplicationTests
     String out = outputCapture.toString();
     assertTrue("Wrong output: " + out,
         out.contains("Started SorsoldkiApplication")
-            && out.contains("Migrating schema \"PUBLIC\" to version 1")
+            && out.contains("jdbc:h2:mem:testdb")
     );
   }
 
