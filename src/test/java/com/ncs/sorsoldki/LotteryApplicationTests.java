@@ -11,7 +11,7 @@ import static org.junit.Assert.assertTrue;
 
 @RunWith(SpringRunner.class)
 @SpringBootTest
-public class SorsoldkiApplicationTests
+public class LotteryApplicationTests
 {
 
   @Rule
@@ -20,10 +20,10 @@ public class SorsoldkiApplicationTests
   @Test
   public void contextLoads()
   {
-    SorsoldkiApplication.main(new String[] {});
+    LotteryApplication.main(new String[] {});
     String out = outputCapture.toString();
     assertTrue("Wrong output: " + out,
-        out.contains("Started SorsoldkiApplication")
+        out.contains("Started LotteryApplicationTests")
             && out.contains("jdbc:h2:mem:testdb")
     );
   }
