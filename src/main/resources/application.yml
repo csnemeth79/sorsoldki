@@ -1,0 +1,26 @@
+spring:
+  profiles:
+    active: "dev"
+
+management:
+  endpoints:
+    web:
+      exposure:
+        include: "*"
+
+---
+
+spring:
+  profiles: dev
+  jpa:
+    open-in-view: true
+    hibernate:
+      ddl-auto: validate
+  h2:
+    console:
+      enabled: true
+
+---
+
+spring:
+  profiles: prod
